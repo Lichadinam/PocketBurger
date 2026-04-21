@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>PocketBurger</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="menu-titulo">
+        MENÚ
+    </div>
+
+
+    <div class="menu">
+
+        <!-- SIMPLE -->
+        <div class="item" onclick="agregar('Simple', 5000)">
+            <img src="img/simple.png">
+            <div>
+                <h3>Hamburguesita Simple</h3>
+                <p>$5000</p>
+            </div>
+        </div>
+
+        <!-- DOBLE -->
+        <div class="item" onclick="agregar('Doble', 7000)">
+            <img src="img/doble.png">
+            <div>
+                <h3>Hamburguesita Doble</h3>
+                <p>$7000</p>
+            </div>
+        </div>
+
+        <!-- TRIPLE -->
+        <div class="item" onclick="agregar('Triple', 9000)">
+            <img src="img/triple.png">
+            <div>
+                <h3>Hamburguesita Triple</h3>
+                <p>$9000</p>
+            </div>
+        </div>
+
+        <!-- COMBO PAPITAS + COQUITA -->
+        <div class="item" onclick="agregar('Combo', 4000)">
+            <img src="img/combo.png">
+            <div>
+                <h3>Combo Papitas + Coquita</h3>
+                <p>$4000</p>
+            </div>
+        </div>
+        <!-- VEGGIE -->
+        <div class="item" onclick="agregar('Veggie', 6000)">
+            <img src="img/veggie.png">
+            <div>
+                <h3>Veggie</h3>
+                <p>$6000</p>
+            </div>
+        </div>
+        <!-- PAPITAS -->
+        <div class="item" onclick="agregar('Papitas', 2500)">
+            <img src="img/papas.png">
+            <div>
+                <h3>Papitas noisette c/ salsa secreta</h3>
+                <p>$2500</p>
+            </div>
+        </div>
+
+        <!-- COQUITA -->
+        <div class="item" onclick="agregar('Coquita', 2500)">
+            <img src="img/coca.png">
+            <div>
+                <h3>Coquita</h3>
+                <p>$2500</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- CARRITO -->
+
+    <div id="carrito-panel" class="carrito-panel">
+
+        <h2>Tu pedido 🛒</h2>
+
+        <div id="lista-carrito"></div>
+
+        <h3 id="total-panel">$0</h3>
+
+        <button onclick="finalizarCompra()" class="btn-finalizar">
+            FINALIZAR COMPRA
+        </button>
+
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
