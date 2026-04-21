@@ -56,5 +56,5 @@ function finalizarCompra() {
   mensaje += `%0ATotal: $${total}%0A`;
   mensaje += `%0AGracias!`;
 
-  window.open(`https://wa.me/TUNUMERO?text=${mensaje}`, "_blank");
+  window.open(`https://wa.me/5491126785227?text=${mensaje}`, "_blank");
 }
